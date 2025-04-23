@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Anniversary, Indahh!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      color: #fff;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      max-width: 500px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+    .heart {
+      font-size: 2em;
+      animation: pulse 1s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Happy Anniversary, Indahh! 🥰</h1>
+    <p>
+      Hari ini adalah hari spesial karena kita telah melewati banyak hal bersama.<br>
+      Terima kasih sudah bertahan, memahami, dan terus mencintaiku apa adanya.<br>
+      Setiap detik bersamamu adalah berkah yang tak ternilai.<br><br>
+      Aku ingin terus melangkah bersamamu, sampai waktu berhenti berjalan.<br>
+      I love you, always and forever.<br>
+      <span class="heart">❤️</span>
+    </p>
+  </div>
+</body>
+</html>
