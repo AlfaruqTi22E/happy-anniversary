@@ -2,58 +2,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Anniversary, Indahh!</title>
+  <title>Happy Anniversary Indahh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f8cdda, #f88fa1);
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
-      text-align: center;
-      color: #fff;
+      overflow: hidden;
     }
-    .card {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 40px;
-      border-radius: 20px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-      max-width: 500px;
+    .container {
+      text-align: center;
+      color: white;
     }
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      margin-bottom: 0.2em;
     }
     p {
       font-size: 1.2em;
-      line-height: 1.6;
+      max-width: 600px;
+      margin: auto;
     }
-    .heart {
-      font-size: 2em;
-      animation: pulse 1s infinite;
+    .btn {
+      margin-top: 2em;
+      padding: 10px 25px;
+      font-size: 1em;
+      background: white;
+      color: #f06292;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
     }
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.2); }
-      100% { transform: scale(1); }
+    .btn:hover {
+      background: #f06292;
+      color: white;
+    }
+    .hearts {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+    .hearts span {
+      position: absolute;
+      display: block;
+      color: white;
+      animation: float 10s linear infinite;
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) scale(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1.5);
+        opacity: 0;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Happy Anniversary, Indahh! 🥰</h1>
-    <p>
-      Hari ini adalah hari spesial karena kita telah melewati banyak hal bersama.<br>
-      Terima kasih sudah bertahan, memahami, dan terus mencintaiku apa adanya.<br>
-      Setiap detik bersamamu adalah berkah yang tak ternilai.<br><br>
-      Aku ingin terus melangkah bersamamu, sampai waktu berhenti berjalan.<br>
-      I love you, always and forever.<br>
-      <span class="heart">❤️</span>
-    </p>
+  <div class="container">
+    <h1>Happy Anniversary Indahh</h1>
+    <p>Aku bersyukur banget bisa punya kamu. Terima kasih udah jadi bagian terindah dalam hidupku. Semoga cinta kita selalu tumbuh dan langgeng sampai tua nanti.</p>
+    <button class="btn" onclick="alert('Aku cinta kamu lebih dari kata-kata bisa ungkapkan.')">Klik ini, Sayang!</button>
+  </div>
+  <div class="hearts">
+    <span style="left:10%; font-size:20px">❤️</span>
+    <span style="left:20%; font-size:25px">❤️</span>
+    <span style="left:30%; font-size:18px">❤️</span>
+    <span style="left:40%; font-size:22px">❤️</span>
+    <span style="left:50%; font-size:24px">❤️</span>
+    <span style="left:60%; font-size:19px">❤️</span>
+    <span style="left:70%; font-size:23px">❤️</span>
+    <span style="left:80%; font-size:21px">❤️</span>
+    <span style="left:90%; font-size:20px">❤️</span>
   </div>
 </body>
 </html>
